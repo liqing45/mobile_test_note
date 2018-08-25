@@ -1,0 +1,20 @@
+TPshop商城APP端的自动化测试步骤
+1.首先搭建好 po + pytest 简单框架
+	文件夹	base,data,page,scripts
+	执行文件	pytest.ini
+	工具类	包含在base中的基类
+		基类：
+			base_driver
+			base_analyze
+			base_action
+		工具类：
+			unittest需要，pytest不需要
+			HTMLTestReportCN
+			HTMLTestRunner
+2.根据测试用例的模块，提取需要的页面信息，将页面元素的定位方式编写在对应的page页面
+3.根据测试用例的步骤，组装测试脚本
+4.根据测试用例的预期结果，添加方法到对应的page界面，然后在对应的脚本断言的时候使用
+5.脚本编写好后，添加报告中需要显示的内容
+6.编写对应的yaml文件，将数据进行参数化，
+
+
